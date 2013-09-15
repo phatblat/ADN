@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F8686F3417E60746003A059E /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F8686F3717E60746003A059E /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				F84A449717E60FC7004B99AC /* Mogenerator */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		F8AD96A117E5F7F600C94F53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AD96A017E5F7F600C94F53 /* Foundation.framework */; };
 		F8AD96A317E5F7F600C94F53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AD96A217E5F7F600C94F53 /* CoreGraphics.framework */; };
@@ -230,6 +244,7 @@
 			targets = (
 				F8AD969C17E5F7F600C94F53 /* ADN */,
 				F8AD96BD17E5F7F700C94F53 /* ADNTests */,
+				F8686F3417E60746003A059E /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +269,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F84A449717E60FC7004B99AC /* Mogenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Mogenerator;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m ADN/Model/Model.xcdatamodeld/Model.xcdatamodel -O  ADN/ADN/Model --template-var arc=ture";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8AD969917E5F7F600C94F53 /* Sources */ = {
@@ -313,6 +345,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F8686F3517E60746003A059E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8686F3617E60746003A059E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F8AD96CD17E5F7F700C94F53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,6 +502,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F8686F3717E60746003A059E /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8686F3517E60746003A059E /* Debug */,
+				F8686F3617E60746003A059E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F8AD969817E5F7F600C94F53 /* Build configuration list for PBXProject "ADN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

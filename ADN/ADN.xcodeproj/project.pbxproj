@@ -21,6 +21,7 @@
 		F8AD96C217E5F7F700C94F53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AD96A417E5F7F600C94F53 /* UIKit.framework */; };
 		F8AD96CA17E5F7F700C94F53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8AD96C817E5F7F700C94F53 /* InfoPlist.strings */; };
 		F8AD96CC17E5F7F700C94F53 /* ADNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AD96CB17E5F7F700C94F53 /* ADNTests.m */; };
+		F8AD96D817E5FA8400C94F53 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8AD96D617E5FA8400C94F53 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F8AD96C717E5F7F700C94F53 /* ADNTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADNTests-Info.plist"; sourceTree = "<group>"; };
 		F8AD96C917E5F7F700C94F53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8AD96CB17E5F7F700C94F53 /* ADNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNTests.m; sourceTree = "<group>"; };
+		F8AD96D717E5FA8400C94F53 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +116,12 @@
 			children = (
 				F8AD96AF17E5F7F600C94F53 /* AppDelegate.h */,
 				F8AD96B017E5F7F600C94F53 /* AppDelegate.m */,
+				F8AD96B817E5F7F600C94F53 /* Images.xcassets */,
 				F8AD96B217E5F7F600C94F53 /* Main.storyboard */,
+				F8AD96D517E5FA5300C94F53 /* Model */,
+				F8AD96A717E5F7F600C94F53 /* Supporting Files */,
 				F8AD96B517E5F7F600C94F53 /* ViewController.h */,
 				F8AD96B617E5F7F600C94F53 /* ViewController.m */,
-				F8AD96B817E5F7F600C94F53 /* Images.xcassets */,
-				F8AD96A717E5F7F600C94F53 /* Supporting Files */,
 			);
 			path = ADN;
 			sourceTree = "<group>";
@@ -150,6 +153,14 @@
 				F8AD96C817E5F7F700C94F53 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8AD96D517E5FA5300C94F53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8AD96D617E5FA8400C94F53 /* Model.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 				F8AD96B717E5F7F600C94F53 /* ViewController.m in Sources */,
 				F8AD96B117E5F7F600C94F53 /* AppDelegate.m in Sources */,
 				F8AD96AD17E5F7F600C94F53 /* main.m in Sources */,
+				F8AD96D817E5FA8400C94F53 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +472,7 @@
 				F8AD96D117E5F7F700C94F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8AD96D217E5F7F700C94F53 /* Build configuration list for PBXNativeTarget "ADNTests" */ = {
 			isa = XCConfigurationList;
@@ -468,8 +481,22 @@
 				F8AD96D417E5F7F700C94F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8AD96D617E5FA8400C94F53 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8AD96D717E5FA8400C94F53 /* Model.xcdatamodel */,
+			);
+			currentVersion = F8AD96D717E5FA8400C94F53 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F8AD969517E5F7F600C94F53 /* Project object */;
 }

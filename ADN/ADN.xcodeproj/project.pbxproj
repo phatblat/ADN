@@ -40,6 +40,10 @@
 		F8FB468417E610C300865C92 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB468317E610C300865C92 /* User.m */; };
 		F8FB468717E610C300865C92 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB468617E610C300865C92 /* Post.m */; };
 		F8FB468A17E610C300865C92 /* AudioAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB468917E610C300865C92 /* AudioAttachment.m */; };
+		F8FB469317E611AF00865C92 /* _Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB468C17E611AF00865C92 /* _Attachment.m */; };
+		F8FB469417E611AF00865C92 /* _AudioAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB468E17E611AF00865C92 /* _AudioAttachment.m */; };
+		F8FB469517E611AF00865C92 /* _Post.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB469017E611AF00865C92 /* _Post.m */; };
+		F8FB469617E611AF00865C92 /* _User.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB469217E611AF00865C92 /* _User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,14 @@
 		F8FB468617E610C300865C92 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		F8FB468817E610C300865C92 /* AudioAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioAttachment.h; sourceTree = "<group>"; };
 		F8FB468917E610C300865C92 /* AudioAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioAttachment.m; sourceTree = "<group>"; };
+		F8FB468B17E611AF00865C92 /* _Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Attachment.h; sourceTree = "<group>"; };
+		F8FB468C17E611AF00865C92 /* _Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Attachment.m; sourceTree = "<group>"; };
+		F8FB468D17E611AF00865C92 /* _AudioAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AudioAttachment.h; sourceTree = "<group>"; };
+		F8FB468E17E611AF00865C92 /* _AudioAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AudioAttachment.m; sourceTree = "<group>"; };
+		F8FB468F17E611AF00865C92 /* _Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Post.h; sourceTree = "<group>"; };
+		F8FB469017E611AF00865C92 /* _Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Post.m; sourceTree = "<group>"; };
+		F8FB469117E611AF00865C92 /* _User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _User.h; sourceTree = "<group>"; };
+		F8FB469217E611AF00865C92 /* _User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +196,14 @@
 		F8AD96D517E5FA5300C94F53 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F8FB468B17E611AF00865C92 /* _Attachment.h */,
+				F8FB468C17E611AF00865C92 /* _Attachment.m */,
+				F8FB468D17E611AF00865C92 /* _AudioAttachment.h */,
+				F8FB468E17E611AF00865C92 /* _AudioAttachment.m */,
+				F8FB468F17E611AF00865C92 /* _Post.h */,
+				F8FB469017E611AF00865C92 /* _Post.m */,
+				F8FB469117E611AF00865C92 /* _User.h */,
+				F8FB469217E611AF00865C92 /* _User.m */,
 				F8FB467F17E610C300865C92 /* Attachment.h */,
 				F8FB468017E610C300865C92 /* Attachment.m */,
 				F8FB468817E610C300865C92 /* AudioAttachment.h */,
@@ -312,14 +332,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FB469617E611AF00865C92 /* _User.m in Sources */,
 				F8AD96B717E5F7F600C94F53 /* ViewController.m in Sources */,
 				F8AD96B117E5F7F600C94F53 /* AppDelegate.m in Sources */,
 				F8FB468417E610C300865C92 /* User.m in Sources */,
 				F8AD96AD17E5F7F600C94F53 /* main.m in Sources */,
 				F8AD96D817E5FA8400C94F53 /* Model.xcdatamodeld in Sources */,
 				F8FB468117E610C300865C92 /* Attachment.m in Sources */,
+				F8FB469517E611AF00865C92 /* _Post.m in Sources */,
+				F8FB469317E611AF00865C92 /* _Attachment.m in Sources */,
 				F8FB468717E610C300865C92 /* Post.m in Sources */,
 				F8FB468A17E610C300865C92 /* AudioAttachment.m in Sources */,
+				F8FB469417E611AF00865C92 /* _AudioAttachment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

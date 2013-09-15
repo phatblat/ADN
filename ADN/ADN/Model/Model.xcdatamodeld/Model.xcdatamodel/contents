@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="13A569" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Attachment" syncable="YES">
+    <entity name="Attachment" representedClassName="Attachment" syncable="YES">
         <attribute name="size" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="sourceURL" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="audioAttachment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AudioAttachment" inverseName="attachment" inverseEntity="AudioAttachment" syncable="YES"/>
         <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="attachments" inverseEntity="Post" syncable="YES"/>
     </entity>
-    <entity name="AudioAttachment" syncable="YES">
+    <entity name="AudioAttachment" representedClassName="AudioAttachment" syncable="YES">
         <attribute name="audioType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <relationship name="attachment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Attachment" inverseName="audioAttachment" inverseEntity="Attachment" syncable="YES"/>
     </entity>
-    <entity name="Post" syncable="YES">
+    <entity name="Post" representedClassName="Post" syncable="YES">
         <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="attachments" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Attachment" inverseName="post" inverseEntity="Attachment" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="posts" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="User" syncable="YES">
+    <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="handle" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="posts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="user" inverseEntity="Post" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="205" positionY="-0" width="128" height="88"/>
-        <element name="Post" positionX="36" positionY="218" width="128" height="103"/>
-        <element name="Attachment" positionX="378" positionY="263" width="128" height="88"/>
-        <element name="AudioAttachment" positionX="196" positionY="416" width="128" height="88"/>
+        <element name="Attachment" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="AudioAttachment" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Post" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="User" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

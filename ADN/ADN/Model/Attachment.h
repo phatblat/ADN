@@ -6,15 +6,11 @@
 //  Copyright (c) 2013 Ben Chatelain. All rights reserved.
 //
 
+#import "_Attachment.h"
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
 
-@interface Attachment : NSManagedObject
-
-@property (nonatomic, retain) NSNumber * size;
-@property (nonatomic, retain) NSString * sourceURL;
-@property (nonatomic, retain) NSManagedObject *audioAttachment;
-@property (nonatomic, retain) NSManagedObject *post;
+@interface Attachment : _Attachment
 
 @end

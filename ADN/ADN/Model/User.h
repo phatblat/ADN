@@ -6,14 +6,11 @@
 //  Copyright (c) 2013 Ben Chatelain. All rights reserved.
 //
 
+#import "_User.h"
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
 
-@interface User : NSManagedObject
-
-@property (nonatomic, retain) NSString * fullName;
-@property (nonatomic, retain) NSString * handle;
-@property (nonatomic, retain) NSManagedObject *posts;
+@interface User : _User
 
 @end

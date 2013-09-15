@@ -6,15 +6,12 @@
 //  Copyright (c) 2013 Ben Chatelain. All rights reserved.
 //
 
+#import "_AudioAttachment.h"
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
 @class Attachment;
 
-@interface AudioAttachment : NSManagedObject
-
-@property (nonatomic, retain) NSNumber * audioType;
-@property (nonatomic, retain) NSNumber * duration;
-@property (nonatomic, retain) Attachment *attachment;
+@interface AudioAttachment : _AudioAttachment
 
 @end

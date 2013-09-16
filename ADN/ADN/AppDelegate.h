@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class ADNService;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ADNService *service;
 
 @end

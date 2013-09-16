@@ -7,12 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "ADNService.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.service = [[ADNService alloc] init];
     return YES;
 }
 							

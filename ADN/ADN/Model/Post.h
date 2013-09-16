@@ -14,4 +14,7 @@
 
 @interface Post : _Post
 
++ (id)postWithId:(NSNumber *)postId;
+- (void)downloadAttachments;
+
 @end

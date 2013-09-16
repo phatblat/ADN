@@ -18,4 +18,15 @@
 @dynamic attachments;
 @dynamic user;
 
+
++ (id)postWithId:(NSNumber *)postId
+{
+    return nil;
+}
+
+- (void)downloadAttachments
+{
+
+}
+
 @end

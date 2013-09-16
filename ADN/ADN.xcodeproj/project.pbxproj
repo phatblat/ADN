@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		299AD7B0C5084419AE734CE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 617067E637674794963EC2E3 /* libPods.a */; };
 		F8991BEB17E6EDD0004A4108 /* ADNService.m in Sources */ = {isa = PBXBuildFile; fileRef = F8991BEA17E6EDD0004A4108 /* ADNService.m */; };
 		F8991BEC17E6EDD0004A4108 /* ADNService.m in Sources */ = {isa = PBXBuildFile; fileRef = F8991BEA17E6EDD0004A4108 /* ADNService.m */; };
 		F8AD96A117E5F7F600C94F53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AD96A017E5F7F600C94F53 /* Foundation.framework */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09BDEA5C44DC49F282DC5FC7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		617067E637674794963EC2E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8991BE917E6EDD0004A4108 /* ADNService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNService.h; sourceTree = "<group>"; };
 		F8991BEA17E6EDD0004A4108 /* ADNService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNService.m; sourceTree = "<group>"; };
 		F8AD969D17E5F7F600C94F53 /* ADN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADN.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +110,7 @@
 				F8AD96A317E5F7F600C94F53 /* CoreGraphics.framework in Frameworks */,
 				F8AD96A517E5F7F600C94F53 /* UIKit.framework in Frameworks */,
 				F8AD96A117E5F7F600C94F53 /* Foundation.framework in Frameworks */,
+				299AD7B0C5084419AE734CE8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +143,7 @@
 				F8AD96C517E5F7F700C94F53 /* ADNTests */,
 				F8AD969F17E5F7F600C94F53 /* Frameworks */,
 				F8AD969E17E5F7F600C94F53 /* Products */,
+				09BDEA5C44DC49F282DC5FC7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +163,7 @@
 				F8AD96A217E5F7F600C94F53 /* CoreGraphics.framework */,
 				F8AD96A417E5F7F600C94F53 /* UIKit.framework */,
 				F8AD96BF17E5F7F700C94F53 /* XCTest.framework */,
+				617067E637674794963EC2E3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8AD96CF17E5F7F700C94F53 /* Build configuration list for PBXNativeTarget "ADN" */;
 			buildPhases = (
+				68D9281E3CC743C48BAB5756 /* Check Pods Manifest.lock */,
 				F8AD969917E5F7F600C94F53 /* Sources */,
 				F8AD969A17E5F7F600C94F53 /* Frameworks */,
 				F8AD969B17E5F7F600C94F53 /* Resources */,
+				1298128AF2094AEF918E2C4B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,6 +333,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1298128AF2094AEF918E2C4B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68D9281E3CC743C48BAB5756 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		F84A449717E60FC7004B99AC /* Mogenerator */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,6 +535,7 @@
 		};
 		F8AD96D017E5F7F700C94F53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09BDEA5C44DC49F282DC5FC7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -510,6 +549,7 @@
 		};
 		F8AD96D117E5F7F700C94F53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09BDEA5C44DC49F282DC5FC7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
